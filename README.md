@@ -16,33 +16,42 @@
 omf install kubectl
 ```
 
-
-## Usage
-
-### Environment variables
+## Environment variables
 
 | Name | Value                      |
 | ---- | -------------------------- |
 | do   | `--dry-run=client -oyaml`  |
 | now  | `--grace-period=0 --force` |
 
-### Abbreviations
+## Abbreviations
+
+### kubectl
+
+| Abbreviation | Command                                       |
+| ------------ | --------------------------------------------- |
+| k            | `kubectl`                                     |
+| kg           | `kubectl get`                                 |
+| kl           | `kubectl logs`                                |
+| kd           | `kubectl describe`                            |
+| ka           | `kubectl apply -f`                            |
+| ke           | `kubectl exec -it`                            |
+| kr           | `kubectl run --dry-run=client -oyaml --image` |
+
+### docker
 
 | Abbreviation | Command                                                       |
 | ------------ | ------------------------------------------------------------- |
-| k            | `kubectl`                                                     |
-| kg           | `kubectl get`                                                 |
-| kl           | `kubectl logs`                                                |
-| kd           | `kubectl describe`                                            |
-| ka           | `kubectl apply -f`                                            |
-| ke           | `kubectl exec -it`                                            |
-| kr           | `kubectl run --dry-run=client -oyaml --image`                 |
-| kx           | `kubectx`                                                     |
-| kn           | `kubens`                                                      |
 | dk           | `docker`                                                      |
 | dke          | `docker exec -it`                                             |
 | dkps         | `docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'` |
-| dkx          | `dockerctx`                                                   |
+
+### others
+
+| Abbreviation | Command     | Link                                                  |
+| ------------ | ----------- | ----------------------------------------------------- |
+| dkx          | `dockerctx` | [Install](https://github.com/devsuccess101/dockerctx) |
+| kx           | `kubectx`   | [Install](https://github.com/ahmetb/kubectx)          |
+| kn           | `kubens`    | [Install](https://github.com/ahmetb/kubectx)          |
 
 ## License
 
