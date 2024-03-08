@@ -13,25 +13,45 @@
 ## Install
 
 ```fish
-$ omf install kubectl
+omf install kubectl
 ```
 
 
 ## Usage
 
-```fish
-$ kubectl
-```
+### Environment variables
 
+| Name | Value                      |
+| ---- | -------------------------- |
+| do   | `--dry-run=client -oyaml`  |
+| now  | `--grace-period=0 --force` |
 
-# License
+### Abbreviations
 
-[MIT][mit] © [{{USER}}][author] et [al][contributors]
+| Abbreviation | Command                                                       |
+| ------------ | ------------------------------------------------------------- |
+| k            | `kubectl`                                                     |
+| kg           | `kubectl get`                                                 |
+| kl           | `kubectl logs`                                                |
+| kd           | `kubectl describe`                                            |
+| ka           | `kubectl apply -f`                                            |
+| ke           | `kubectl exec -it`                                            |
+| kr           | `kubectl run --dry-run=client -oyaml --image`                 |
+| kx           | `kubectx`                                                     |
+| kn           | `kubens`                                                      |
+| dk           | `docker`                                                      |
+| dke          | `docker exec -it`                                             |
+| dkps         | `docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'` |
+| dkx          | `dockerctx`                                                   |
+
+## License
+
+[MIT][mit] © [Nguyen Huu Kim][author] et [al][contributors]
 
 
 [mit]:            https://opensource.org/licenses/MIT
-[author]:         https://github.com/{{USER}}
-[contributors]:   https://github.com/{{USER}}/plugin-kubectl/graphs/contributors
+[author]:         https://github.com/kimyvgy
+[contributors]:   https://github.com/devsuccess101/plugin-kubectl/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square

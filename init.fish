@@ -5,20 +5,30 @@
 # * $path          package path
 # * $dependencies  package dependencies
 
-if which kubectl
-  kubectl completion fish | source
+if which kubectl > /dev/null
+  set -g -x do --dry-run=client -oyaml
+  set -g -x now --grace-period=0 --force
 
   alias k=kubectl
-  alias ka="kubectl apply -f"
 
-  alias kg="kubectl get"
-  alias kgp="kubectl get po"
-  alias kgd="kubectl get deploy"
-  alias kgs="kubectl get svc"
-  alias kgn="kubectl get node"
+  abbr -a -g k kubectl
+  abbr -a -g kg "kubectl get"
+  abbr -a -g kl "kubectl logs"
+  abbr -a -g kd "kubectl describe"
+  abbr -a -g ka "kubectl apply -f"
+  abbr -a -g ke "kubectl exec -it"
+  abbr -a -g kr "kubectl run $do --image"
 
-  alias kd="kubectl describe"
-  alias kdp="kubectl describe pod"
-  alias kdd="kubectl describe deploy"
-  alias kds="kubectl describe svc"
+  abbr -a -g kx "kubectx"
+  abbr -a -g kn "kubens"
+
+  kubectl completion fish | source
+end
+
+if which docker > /dev/null
+  abbr -a -g dk "docker"
+  abbr -a -g dke "docker exec -it"
+  abbr -a -g dkps "docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'"
+
+  abbr -a -g dkx "dockerctx"
 end
