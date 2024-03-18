@@ -44,7 +44,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | dk           | `docker`                                                      |
 | dke          | `docker exec -it`                                             |
 | dkps         | `docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'` |
-| dke          | `docker logs -f --tail 300`                                   |
+| dkl          | `docker logs -f --tail 300`                                   |
 
 ### others
 
