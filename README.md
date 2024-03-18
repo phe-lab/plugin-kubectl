@@ -54,6 +54,12 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | kx           | `kubectx`   | [Install](https://github.com/ahmetb/kubectx)          |
 | kn           | `kubens`    | [Install](https://github.com/ahmetb/kubectx)          |
 
+## Uninstall
+
+```fish
+omf remove kubectl
+```
+
 ## License
 
 [MIT][mit] © [Nguyen Huu Kim][author] et [al][contributors]
