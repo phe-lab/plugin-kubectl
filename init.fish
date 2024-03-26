@@ -13,7 +13,7 @@ if which kubectl > /dev/null
 
   abbr -a -g k kubectl
   abbr -a -g kg "kubectl get"
-  abbr -a -g kl "kubectl logs"
+  abbr -a -g kl "kubectl logs -f --tail 300"
   abbr -a -g kd "kubectl describe"
   abbr -a -g ka "kubectl apply -f"
   abbr -a -g ke "kubectl exec -it"
