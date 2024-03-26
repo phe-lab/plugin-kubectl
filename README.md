@@ -31,7 +31,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | ------------ | --------------------------------------------- |
 | k            | `kubectl`                                     |
 | kg           | `kubectl get`                                 |
-| kl           | `kubectl logs`                                |
+| kl           | `kubectl logs -f --tail 300`                  |
 | kd           | `kubectl describe`                            |
 | ka           | `kubectl apply -f`                            |
 | ke           | `kubectl exec -it`                            |
