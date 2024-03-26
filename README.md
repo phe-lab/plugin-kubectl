@@ -12,7 +12,14 @@
 
 ## Install
 
-```fish
+```bash
+omf install https://github.com/devsuccess101/plugin-kubectl
+```
+
+## Update
+
+```bash
+omf remove kubectl
 omf install https://github.com/devsuccess101/plugin-kubectl
 ```
 
