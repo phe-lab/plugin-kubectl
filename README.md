@@ -39,11 +39,12 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | ------------ | --------------------------------------------- |
 | k            | `kubectl`                                     |
 | kg           | `kubectl get`                                 |
-| kl           | `kubectl logs -f --tail 300`                  |
+| kc           | `kubectl create`                              |
 | kd           | `kubectl describe`                            |
 | ka           | `kubectl apply -f`                            |
 | ke           | `kubectl exec -it`                            |
 | kr           | `kubectl run --dry-run=client -oyaml --image` |
+| kl           | `kubectl logs -f --tail 300`                  |
 
 | Abbreviation | Command                                       |
 | ------------ | --------------------------------------------- |
