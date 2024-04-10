@@ -8,6 +8,7 @@
 if which kubectl > /dev/null
   set -g -x do --dry-run=client -oyaml
   set -g -x now --grace-period=0 --force
+  set -g -x ow -owide
 
   alias k=kubectl
 
@@ -21,6 +22,11 @@ if which kubectl > /dev/null
 
   abbr -a -g kx "kubectx"
   abbr -a -g kn "kubens"
+
+  abbr -a -g kgp "kubectl get pod"
+  abbr -a -g kgd "kubectl get deploy"
+  abbr -a -g kgn "kubectl get node"
+  abbr -a -g wkgp "watch kubectl get pod"
 
   kubectl completion fish | source
 end
