@@ -29,6 +29,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | ---- | -------------------------- |
 | do   | `--dry-run=client -oyaml`  |
 | now  | `--grace-period=0 --force` |
+| ow   | `-owide`                   |
 
 ## Abbreviations
 
@@ -43,6 +44,13 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | ka           | `kubectl apply -f`                            |
 | ke           | `kubectl exec -it`                            |
 | kr           | `kubectl run --dry-run=client -oyaml --image` |
+
+| Abbreviation | Command                                       |
+| ------------ | --------------------------------------------- |
+| kgp          | `kubectl get pod`                             |
+| kgd          | `kubectl get deploy`                          |
+| kgn          | `kubectl get node`                            |
+| wkgp         | `watch kubectl get pod`                       |
 
 ### docker
 
