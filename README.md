@@ -50,6 +50,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 | kgp          | `kubectl get pod`                             |
 | kgd          | `kubectl get deploy`                          |
 | kgn          | `kubectl get node`                            |
+| kge          | `kubectl get event`                           |
 | wkgp         | `watch kubectl get pod`                       |
 
 ### docker
