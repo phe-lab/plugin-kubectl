@@ -14,6 +14,7 @@
 
 ```bash
 omf install https://github.com/devsuccess101/plugin-kubectl
+omf reload
 ```
 
 ## Update
@@ -21,6 +22,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 ```bash
 omf remove kubectl
 omf install https://github.com/devsuccess101/plugin-kubectl
+omf reload
 ```
 
 ## Environment variables
@@ -75,6 +77,7 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 
 ```fish
 omf remove kubectl
+omf reload
 ```
 
 ## License
