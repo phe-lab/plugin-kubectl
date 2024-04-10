@@ -17,14 +17,6 @@ omf install https://github.com/devsuccess101/plugin-kubectl
 omf reload
 ```
 
-## Update
-
-```bash
-omf remove kubectl
-omf install https://github.com/devsuccess101/plugin-kubectl
-omf reload
-```
-
 ## Environment variables
 
 | Name | Value                      |
@@ -72,6 +64,14 @@ omf reload
 | dkx          | `dockerctx` | [Install](https://github.com/devsuccess101/dockerctx) |
 | kx           | `kubectx`   | [Install](https://github.com/ahmetb/kubectx)          |
 | kn           | `kubens`    | [Install](https://github.com/ahmetb/kubectx)          |
+
+## Update
+
+```bash
+omf remove kubectl
+omf install https://github.com/devsuccess101/plugin-kubectl
+omf reload
+```
 
 ## Uninstall
 
