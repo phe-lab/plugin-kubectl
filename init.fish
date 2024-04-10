@@ -26,6 +26,7 @@ if which kubectl > /dev/null
   abbr -a -g kgp "kubectl get pod"
   abbr -a -g kgd "kubectl get deploy"
   abbr -a -g kgn "kubectl get node"
+  abbr -a -g kge "kubectl get event"
   abbr -a -g wkgp "watch kubectl get pod"
 
   kubectl completion fish | source
