@@ -21,14 +21,16 @@ if which kubectl > /dev/null
   abbr -a -g kr "kubectl run $do --image"
   abbr -a -g kl "kubectl logs -f --tail 300"
 
-  abbr -a -g kx "kubectx"
-  abbr -a -g kn "kubens"
-
+  abbr -a -g kxp "kubectl explain"
   abbr -a -g kgp "kubectl get pod"
   abbr -a -g kgd "kubectl get deploy"
   abbr -a -g kgn "kubectl get node"
   abbr -a -g kge "kubectl get event"
   abbr -a -g wkgp "watch kubectl get pod"
+
+  abbr -a -g kx "kubectx"
+  abbr -a -g kn "kubens"
+  abbr -a -g m "minikube"
 
   kubectl completion fish | source
 end
