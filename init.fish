@@ -21,7 +21,7 @@ if which kubectl > /dev/null
   abbr -a -g kr "kubectl run $do --image"
   abbr -a -g kl "kubectl logs -f --tail 300"
 
-  abbr -a -g kxp "kubectl explain"
+  abbr -a -g kxp "kubectl explain --recursive"
   abbr -a -g kgp "kubectl get pod"
   abbr -a -g kgd "kubectl get deploy"
   abbr -a -g kgn "kubectl get node"
