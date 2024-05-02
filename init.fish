@@ -35,6 +35,10 @@ if which kubectl > /dev/null
   kubectl completion fish | source
 end
 
+if which flux > /dev/null
+  flux completion fish | source
+end
+
 if which docker > /dev/null
   abbr -a -g dk "docker"
   abbr -a -g dke "docker exec -it"
