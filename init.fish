@@ -19,7 +19,7 @@ if which kubectl > /dev/null
   abbr -a -g ka "kubectl apply -f"
   abbr -a -g ke "kubectl exec -it"
   abbr -a -g kr "kubectl run $do --image"
-  abbr -a -g kl "kubectl logs -f --tail 300"
+  abbr -a -g kl "kubectl logs --tail 300"
 
   abbr -a -g kxp "kubectl explain --recursive"
   abbr -a -g kgp "kubectl get pod"
