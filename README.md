@@ -19,11 +19,12 @@ omf reload
 
 ## Environment variables
 
-| Name | Value                      |
-| ---- | -------------------------- |
-| do   | `--dry-run=client -oyaml`  |
-| now  | `--grace-period=0 --force` |
-| ow   | `-owide`                   |
+| Name | Value                                    |
+| ---- | ---------------------------------------- |
+| do   | `--dry-run=client -oyaml`                |
+| now  | `--grace-period=0 --force`               |
+| ow   | `-owide`                                 |
+| lrn  | `--load-restrictor LoadRestrictionsNone` |
 
 ## Abbreviations
 
