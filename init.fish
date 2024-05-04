@@ -6,9 +6,13 @@
 # * $dependencies  package dependencies
 
 if which kubectl > /dev/null
+  # env vars for kubectl:
   set -g -x do --dry-run=client -oyaml
   set -g -x now --grace-period=0 --force
   set -g -x ow -owide
+
+  # env vars for kustomize:
+  set -g -x lrn --load-restrictor LoadRestrictionsNone
 
   alias k=kubectl
 
