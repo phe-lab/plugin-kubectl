@@ -37,9 +37,10 @@ omf reload
 | kd           | `kubectl describe`                            |
 | ka           | `kubectl apply -f`                            |
 | ke           | `kubectl exec -it`                            |
-| kr           | `kubectl run --dry-run=client -oyaml --image` |
-| kl           | `kubectl logs -f --tail 300`                  |
+| kr           | `kubectl run $do --image`                     |
+| kl           | `kubectl logs --tail 300`                     |
 | kxp          | `kubectl explain --recursive`                 |
+| kk           | `kubectl kustomize`                           |
 
 | Abbreviation | Command                                       |
 | ------------ | --------------------------------------------- |
