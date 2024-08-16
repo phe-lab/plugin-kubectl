@@ -39,6 +39,7 @@ omf reload
 | ka           | `kubectl apply -f`                            |
 | ke           | `kubectl exec -it`                            |
 | kr           | `kubectl run $do --image`                     |
+| krtmp        | `kubectl run tmp --rm -it --image`            |
 | kl           | `kubectl logs --tail 300`                     |
 | kxp          | `kubectl explain --recursive`                 |
 | kk           | `kubectl kustomize`                           |
