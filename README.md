@@ -13,7 +13,7 @@
 ## Install
 
 ```bash
-omf install https://github.com/devsuccess101/plugin-kubectl
+omf install https://github.com/phe-lab/plugin-kubectl
 omf reload
 ```
 
@@ -64,15 +64,15 @@ omf reload
 
 | Abbreviation | Command     | Link                                                  |
 | ------------ | ----------- | ----------------------------------------------------- |
-| dkx          | `dockerctx` | [Install](https://github.com/devsuccess101/dockerctx) |
+| dkx          | `dockerctx` | [Install](https://github.com/phe-lab/dockerctx) |
 | kx           | `kubectx`   | [Install](https://github.com/ahmetb/kubectx)          |
 | kn           | `kubens`    | [Install](https://github.com/ahmetb/kubectx)          |
 
-## Update
+## Upgrade
 
 ```bash
 omf remove kubectl
-omf install https://github.com/devsuccess101/plugin-kubectl
+omf install https://github.com/phe-lab/plugin-kubectl
 omf reload
 ```
 
@@ -90,7 +90,7 @@ omf reload
 
 [mit]:            https://opensource.org/licenses/MIT
 [author]:         https://github.com/kimyvgy
-[contributors]:   https://github.com/devsuccess101/plugin-kubectl/graphs/contributors
+[contributors]:   https://github.com/phe-lab/plugin-kubectl/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
