@@ -23,8 +23,8 @@ if which kubectl > /dev/null
   abbr -a -g ka "kubectl apply -f"
   abbr -a -g ke "kubectl exec -it"
   abbr -a -g kr "kubectl run $do --image"
+  abbr -a -g krtmp "kubectl run tmp --rm -it --image"
   abbr -a -g kl "kubectl logs --tail 300"
-  abbr -a -g kk "kubectl kustomize"
 
   abbr -a -g kxp "kubectl explain --recursive"
   abbr -a -g kgp "kubectl get pod"
@@ -33,6 +33,7 @@ if which kubectl > /dev/null
   abbr -a -g kge "kubectl get event"
   abbr -a -g wkgp "watch kubectl get pod"
 
+  abbr -a -g kk "kubectl kustomize"
   abbr -a -g kx "kubectx"
   abbr -a -g kn "kubens"
   abbr -a -g m "minikube"
